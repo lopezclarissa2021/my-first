@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const db = require('./database/db.js');
 const bodyParser = require('body-parser');
-
+ 
 app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
