@@ -1,0 +1,21 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html>
+<%- include("./partials/head.ejs") %>
+<body>
+	<%- include("./partials/nav.ejs") %>
+	<h1>VERSES</h1>
+	<div>
+		<% verses.forEach(verse => { %>
+			<h1 class="username">Posted by: <%= verse.username %></h1>
+			<h2 class="book-verse">The book of: <%= verse.book %> - <%=  verse.verse %></h2>
+			<h2 class="version"> Translation: <%= verse.version %></h2>
+			<h3 class="reading">Scripture- reading: "<%=  verse.reading %>"</h3>
+			<h3 class="meaning">What this means to me: <%= verse.meaning %></h3>
+		<% }) %>	
+	</div>
+	<h1><a href="/add-verse">Add verse</a></h1>
+	<%- include("./partials/foot.ejs") %>
+	<script type="text/javascript" src=".js"></script>
+</body>
+</html>

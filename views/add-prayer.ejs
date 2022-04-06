@@ -1,0 +1,15 @@
+<!-- add-prayer.ejs -->
+<!DOCTYPE html>
+<html>
+<%- include("./partials/head.ejs") %>
+<body>
+	<%- include("./partials/nav.ejs") %>
+	<h1>Add Prayer Request page.... coming soon</h1>
+	<form action="/add-prayer" method="POST">
+		<textarea type="text" name="prayer" placeholder="prayer request" isRequired></textarea>
+		<br/>
+		<input type="submit" value="submit">
+	</form>
+	<%- include("./partials/foot.ejs") %>
+	<script type="text/javascript" src=".js"></script>
+</body>

@@ -1,0 +1,31 @@
+<!-- add-message.ejs -->
+<!DOCTYPE html>
+<html>
+<%- include("./partials/head.ejs") %>
+<body>
+	<%- include("./partials/nav.ejs") %>
+	<h1>Add message page.... coming soon</h1>
+	<form action="/add-message" method="POST">
+		<label>Topic:</label>
+		<select value="topic" name="topic">
+			<option>Hope</option>
+			<option>Love</option>
+			<option>Faith</option>
+			<option>Self Control</option>
+			<option>Patience</option>
+			<option>Endurance</option>
+			<option>Joy</option>
+			<option>Goodness</option>
+			<option>Kindness</option>
+			<option>Strength</option>
+			<option>Prayer</option>
+		</select>
+		<br/>
+		<textarea type="text" name="message" placeholder="message" isRequired></textarea>
+		<br/>
+		<input type="submit" value="submit">
+	</form>
+	<%- include("./partials/foot.ejs") %>
+	<script type="text/javascript" src=".js"></script>
+</body>
+</html>
