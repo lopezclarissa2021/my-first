@@ -1,0 +1,21 @@
+{
+  "name": "express-1-routes-starter-code",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js localhost 8080"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
+    "ejs": "^3.1.8",
+    "express": "^4.17.1",
+    "jquery": "3.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
