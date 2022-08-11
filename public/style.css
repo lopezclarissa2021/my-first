@@ -1,7 +1,8 @@
 body {
-	background-color: #b5e3de;
+  background-color: #b5e3de;
   font-family: 'Ink Free';
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -12,22 +13,27 @@ nav {
   background-color: #235c57;
   border-radius: 10%;
 }
+
 nav ul {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
+
 nav li {
   list-style-type: none;
   margin-left: 20px;
 }
+
 nav h1 {
   font-size: 3em;
 }
+
 nav a {
   color: #009b77;
   font-weight: 300;
 }
+
 nav p {
   font-weight: 300;
   font-size: 1.5em;
@@ -35,18 +41,20 @@ nav p {
 }
 
 footer {
- position: fixed;
- bottom: 0px;
- width: 100%;
- border-top: 2px solid grey;
- background-color: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  border-top: 2px solid grey;
+  background-color: white;
 }
 
 #login {
   float: left;
   margin-left: 100px;
 }
-#login h1, #create-account h1 {
+
+#login h1,
+#create-account h1 {
   font-size: 3em;
 }
 
@@ -54,7 +62,7 @@ footer {
   float: right;
   margin-bottom: 30px;
   margin-right: 100px;
-  padding-left: 20px; 
+  padding-left: 20px;
   border-left: 5px solid grey;
 }
 
@@ -79,4 +87,4 @@ footer {
      display: block;
    }
 
-}*/
+} */

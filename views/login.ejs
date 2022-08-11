@@ -2,35 +2,36 @@
 <!DOCTYPE html>
 <html>
 <%- include("./partials/head.ejs") %>
-<body>
-	<nav>
-	  <div class="site-title">
-	   <h1>Bible Verses</h1>
-	    <p>An Inspirational Uplift From Everyday Life</p>
-	  </div>
-	</nav>
-	<div id="login">
-		<h1>Login</h1>
-		<form action="/login-info" method="GET">
-			<input type="text" placeholder="username" name="username" required/>
-			<br>
-			<input type="password" placeholder="password" name="password" required/>
-			<br>
-			<input type="submit" value="login" />
-		</form>
-	</div>
-	<div id="create-account">
-		<h1>Create Account here</h1>
-		<form action="/create-account" method="POST">
-			<input type="text" placeholder="username" name="username" minlength="6" maxlength="10" required/>
-			<br>
-			<input type="password" placeholder="password" name="password" minlength="8" maxlength="10" required/>
-			<br>
-			<input type="password" placeholder="re-enter password" name="password2" required/>
-			<br>
-			<input type="submit" value="create account" />
-		</form>
-	</div>
-	<%- include("./partials/foot.ejs") %>
-	<script type="text/javascript" src=".js"></script>
-</body>
+
+	<body class="container-fluid">
+		<nav>
+			<div class="site-title">
+				<h1>Bible Verses</h1>
+				<p>An Inspirational Uplift From Everyday Life</p>
+			</div>
+		</nav>
+		<div id="login" class="col-sm-6">
+			<h1>Login</h1>
+			<form action="/login-info" method="GET">
+				<input type="text" placeholder="username" name="username" required />
+				<br>
+				<input type="password" placeholder="password" name="password" required />
+				<br>
+				<input type="submit" value="login" />
+			</form>
+		</div>
+		<div id="create-account" class="col-sm-6">
+			<h1>Create Account</h1>
+			<form action="/create-account" method="POST">
+				<input type="text" placeholder="username" name="username" minlength="6" maxlength="10" required />
+				<br>
+				<input type="password" placeholder="password" name="password" minlength="8" maxlength="10" required />
+				<br>
+				<input type="password" placeholder="re-enter password" name="password2" required />
+				<br>
+				<input type="submit" value="create account" />
+			</form>
+		</div>
+		<%- include("./partials/foot.ejs") %>
+			<script type="text/javascript" src=".js"></script>
+	</body>
